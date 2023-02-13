@@ -1,5 +1,7 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -11,19 +13,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
 }
 
+.player-container {
+  height: 470px;
+  width: 370px;
+  /*here we are using width 400px because most of big smartphone has just the little bit over of widht compare to widht of 400px.  */
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
 
+}
 
 .img-container {
-
+  height: 270px;
+  width: 270px;
   position: relative;
   top: -50px;
   left: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
+.img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
 
 h2 {
   font-size: 25px;
