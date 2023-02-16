@@ -18,8 +18,8 @@ body {
 }
 
 .player-container {
-  height: 470px;
-  width: 370px;
+  height: 500px;
+  width: 400px;
   /*here we are using width 400px because most of big smartphone has just the little bit over of widht compare to widht of 400px.  */
   background: #e7e7e7;
   border-radius: 20px;
@@ -28,13 +28,12 @@ body {
 }
 
 .img-container {
-  height: 270px;
-  width: 270px;
+  height: 300px;
+  width: 300px;
   position: relative;
   top: -50px;
   left: 50px;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .img-container img {
@@ -96,9 +95,13 @@ h3 {
   font-size: 30px;
   color: rgb(129, 129, 129);
   margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
 
 }
-
+.fas:hover{
+  filter: brightness(80%);
+}
 
 
 .main-button {
@@ -109,7 +112,10 @@ h3 {
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
-
+.player-container{
+  width:95vw;
+}
+/* question: how to find out which widht is gooing to be perfect for the given container for which we are chainging widht through media query? */
 
   .img-container {
     left: 29px;
